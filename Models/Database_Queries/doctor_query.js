@@ -76,6 +76,7 @@ exports.getDoctor = async function() {
 }
 
 
+
 exports.getSchedule = async function() {
     return await model.doctor.findAll({
         raw: true,
