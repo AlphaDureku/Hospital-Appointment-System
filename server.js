@@ -30,7 +30,7 @@ app.use(session({
     saveUninitialized: false
 }))
 app.use(expressLayouts);
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/Public'));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: false }));
 app.use("/", indexRouter);
 app.use("/Manage-Appointments", manageAppontmentRouter);
